@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Name</label>
+        <input type="text" name="" id="name">
+
+    </div>
+    <div>
+        <label for="">Surname</label>
+        <input type="text" name="" id="surname">
+        
+    </div>
+    <button onclick="yaz()">Yaz</button>
+</body>
+</html>
+<script>
+    function yaz()
+    {
+        var x ="Name " +document.getElementById("name").value;
+        var y ="Surname " +document.getElementById("surname").value;
+        
+        
+        // alert("Name " +document.getElementById("name").value);
+        // alert("Surname " +document.getElementById("surname").value);
+
+        // console.log("Name " +document.getElementById("name").value+" Surname " +document.getElementById("surname").value)
+
+    }
+</script>

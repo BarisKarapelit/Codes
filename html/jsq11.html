@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  id="button" onmouseover="b1()" onmouseout="b2()">Big Button</button>
+</body>
+</html>
+<script>
+    function b1()
+    {
+        document.getElementById("button").style.width="160px";
+        document.getElementById("button").style.height="30px";
+        document.getElementById("button").style.backgroundColor="aqua";
+
+
+    }
+    function b2()
+    {
+        document.getElementById("button").style.width="";
+        document.getElementById("button").style.height="";
+        document.getElementById("button").style.backgroundColor="";
+
+
+    }
+</script>

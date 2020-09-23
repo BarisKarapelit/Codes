@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<input type="text" id="in1">
+<button id="btn1" onclick="islem()">İşlem</button>
+</body>
+
+</html>
+<script>
+var toplam =0;
+var sayac=0;
+  function islem()
+  {
+     var value=document.getElementById("in1").value;
+     toplam=toplam+Number(value);
+     sayac++;
+     if(toplam>50)
+     {
+        alert(toplam+ " - "+sayac);
+        document.getElementById("in1").disabled =true;
+     }
+  }
+
+</script>

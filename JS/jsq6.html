@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9-nAJHJoAIrO2mVwBbVANofMx-Hq8jLF4P0W7wWK67riSPeJYjswZUEAEOjbFhz3yOrmGQpLygG2Ltbprx7jU-kVPyXbgdXTxUg&usqp=CAU&ec=45702846"
+            alt="">
+    </div>
+    <div>
+        <label for="">width :</label> <input type="text" name="" id="x"> </div>
+    <div> <label for="">height :</label><input type="text" name="" id="y" ></div>
+    <button onclick="islem()">İşlem</button>
+
+</body>
+
+</html>
+<script>
+    function islem()
+    {
+        var x=document.getElementById("x").value;
+        var y=document.getElementById("y").value;
+        document.getElementById("img").style.width=x+"px";
+        document.getElementById("img").style.height=y+"px";
+
+    }
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Sayi 1</label>
+        <input type="text" name="" id="sayi1">
+    </div>
+    <div>
+        <label for="">Sayi 2</label>
+        <input type="text" name="" id="sayi2">
+    </div>
+    <button onclick="islem()">İşlem</button>
+    <button onclick="topla()">topla</button>
+</body>
+
+</html>
+<script>
+    function islem() {
+
+        var x = document.getElementById("sayi1").value;
+        var y = document.getElementById("sayi2").value;
+        var sonuc = x * y;
+        if(sonuc==isNaN())
+        {
+         alert("Sayi Gir")
+        }else
+        {
+            alert(sonuc);
+        }
+
+    }
+    function topla() {
+        var x = document.getElementById("sayi1").value;
+        var y = document.getElementById("sayi2").value;
+        x = Number(x + y);
+        alert(x);
+    }
+</script>

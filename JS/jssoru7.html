@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<input type="text" id="in1">
+    <input type="text" id="in2">
+    <button onClick="İSLEM()">
+    Send</button>
+<body>
+</body>
+</html>
+<script>
+    
+    function İSLEM()
+    {
+        var vize= Number(document.getElementById("in1").value);
+        var final = Number(document.getElementById("in2").value);
+        
+        var aveg= (vize*0.4)+(final*0.6);
+        
+        if(aveg>0 && aveg<100)
+            {
+                if(aveg>=50)
+                    {
+                        alert("geçti bee yaaaa");
+                        
+                    }else if(aveg<50)
+                        {
+                            alert("Kaldın!!!!");
+                        }
+            }else
+                {
+                    alert("Geçersiz not");
+                }
+    }
+
+</script>

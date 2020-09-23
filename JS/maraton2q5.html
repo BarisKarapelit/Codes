@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        #slider {
+            
+            padding-bottom: 40%;
+            border: 1px solid black;
+            background-size: cover;
+            
+            
+            
+        }
+
+        #geri {
+            
+           
+            
+            font-size: 70px;
+
+        }
+
+        #ileri {
+            
+            font-size: 70px;
+        }
+        .box{
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+           width: 100%;
+           align-items: center;
+           top: 35%;
+          
+            
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div id="slider">
+                <div class="box" >
+                    <div onclick="geri()" class="fas fa-chevron-circle-left" id="geri"></div>
+    
+    
+                <div onclick="ileri()" id="ileri" class="fas fa-chevron-circle-right"></div>
+                </div>
+                
+            </div>
+        
+        </div>
+        </div>
+        
+        
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+<script>
+    var resimler = ["https://placeimg.com/1000/520/tech", "https://placeimg.com/1000/520/tech?t=1600501731497",
+        "https://placeimg.com/1000/520/tech?t=1600501744922", "https://placeimg.com/1000/520/tech?t=1600501756489", "https://placeimg.com/1000/520/tech?t=1600501767170"]
+    var sayac = 0;
+
+    document.getElementById("slider").style.backgroundImage = 'url("' + resimler[sayac] + '")';
+    sayac = Number(sayac) + Number(1)
+
+    setInterval(() => {
+        document.getElementById("slider").style.backgroundImage = 'url("' + resimler[sayac] + '")';
+        sayac = sayac + Number(1);
+        if (sayac == 5) {
+            sayac = 0;
+        }
+
+
+
+    }, 4000);
+
+    function ileri() {
+        sayac = Number(sayac) + Number(1)
+        if (sayac == 3) {
+            sayac = 0
+        }
+        document.getElementById("slider").style.backgroundImage = 'url("' + resimler[sayac] + '")'
+    }
+    function geri() {
+        sayac = Number(sayac) - Number(1)
+        if (sayac == -1) {
+            sayac = 2
+        }
+        document.getElementById("slider").style.backgroundImage = 'url("' + resimler[sayac] + '")'
+    }
+</script>

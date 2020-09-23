@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        width: 200px;
+        height: 200px;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: center;
+    }
+    .box2{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div class="container" style="display: flex;align-items: center;flex-direction: column; ">
+        <div id="box" s>
+
+        </div>
+        <div class="box2">
+            <div>
+                <img id="img1" src="https://picsum.photos/200" alt="" width="150px" height="150px">
+                <button onclick="b1()">Send</button>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300" alt="" width="150px" height="150px">
+                <button onclick="b2()">Send</button>
+            </div>
+            <div>
+                <img src="https://picsum.photos/400" alt="" width="150px" height="150px">
+                <button onclick="b3()">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function b1()
+    {
+         document.getElementById("box").style.backgroundImage="url('https://picsum.photos/200')";
+    }
+    function b2()
+    {
+         document.getElementById("box").style.backgroundImage="url('https://picsum.photos/300')";
+    }
+    function b3()
+    {
+         document.getElementById("box").style.backgroundImage="url('https://picsum.photos/400')";
+    }
+    
+</script>

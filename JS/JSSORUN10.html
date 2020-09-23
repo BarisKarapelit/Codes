@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+    <input type="text" id="in1">
+    <button onClick="b1()">Koy</button>
+<button onClick="b2()">Göster</button>
+<body>
+</body>
+</html>
+<script>
+var sayilar=[];
+    
+    function b1()
+    {
+       var  x = document.getElementById("in1").value;
+        sayilar.push(x);
+        document.getElementById("in1").innerHTML="";
+    }
+    function b2()
+    {
+       sayilar.sort();
+    
+        console.log(sayilar);
+    }
+</script>

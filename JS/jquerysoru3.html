@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="text" id="data">
+    <input type="text" id="data2">
+    <button>İslem</button>
+    <div></div>
+</body>
+</html>
+<script>
+$('button').click(function()
+{
+    var x=$('#data').val();
+    var y=$('#data2').val();
+    var z=x+" "+y;
+    $('div').append("<p></p>")
+    $('p').text(z);
+})
+</script>

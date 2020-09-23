@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">
+
+    </div>
+    
+</body>
+
+</html>
+<script>
+    setInterval(() => {
+
+        var imgs = [ "https://placeimg.com/400/400/animals", "https://placeimg.com/400/400/animals?t=1600420271206",
+        "https://placeimg.com/400/400/animals?t=1600420364472"]
+        console.log(imgs[rand]);
+
+        var rand = Math.floor(Math.random()*3);
+        var slayt=imgs[rand];
+        document.getElementById("div1").style.backgroundImage='url("'+imgs[rand]+'")';
+
+    }, 1000);
+
+
+</script>

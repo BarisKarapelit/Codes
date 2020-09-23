@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button>İşlem</button>
+    <ul></ul>
+</body>
+</html>
+<script>
+$('button').click(function()
+{
+    var url = "https://northwind.now.sh/api/orders";
+    $.getJSON(url, function (data) {
+
+        data.forEach(function(item) {
+
+
+                // $('ul').append("<li>"+item.name+"<li>")
+                    var x =Number(item.details.unitPrice)*Number(item.details.quantaity);
+
+                if(x>200)
+                {
+               $('ul').append("<li>"+item.id+"-"+item.orderDate+" - "+Number(item.details.unitPrice)*Number(item.details.quantaity)+"<li>")
+                $('li').css("color","red");
+                }
+                else{
+               $('ul').append("<li>"+item.id+"-"+item.orderDate+" - "+Number(item.details.unitPrice)*Number(item.details.quantaity)+"<li>")
+
+                }
+            });
+
+
+    })
+
+})
+</script>

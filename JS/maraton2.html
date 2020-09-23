@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="in1">
+    
+    <input type="text" id="in2">
+    
+
+    <button onclick="ekle()">Ekle</button>
+    <button onclick="sayili()">Adeti</button>
+    <button onclick="ters()">Ters</button>
+    <button onclick="search()">Search</button>
+    <button onclick="kontol()">Kontrol</button>
+
+
+</body>
+
+</html>
+<script>
+    var dizi = []
+    function ekle() 
+    {
+        var veri=document.getElementById("in1").value;
+        console.log(dizi.push(veri));
+        console.log(dizi)
+    }
+
+    function sayili()
+    {
+        alert(dizi.length);
+    }
+    function ters()
+    {
+        console.log(dizi.reverse());
+    }
+    function search()
+    {
+        var search=document.getElementById("in2").value;
+        if(dizi.includes(search))
+        {
+            console.log("Eleman Var");
+
+        }
+        else{
+            console.log("Eleman Yok");
+        }
+    }
+    function kontol()
+    {
+        var search=document.getElementById("in2").value;
+        if(dizi.indexOf(search)>=0)
+        {
+            console.log("Eleman Var");
+
+        }
+        else{
+            console.log("Eleman Yok");
+        }
+
+    }
+
+</script>

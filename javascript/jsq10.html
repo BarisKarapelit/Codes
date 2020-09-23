@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <input onchange="b1()" type="text" name="" id="x">
+</body>
+</html>
+<script>
+    function b1()
+    {
+        var x=document.getElementById("x").value;
+        
+        document.getElementById("box").style.width=x+"px";
+    }
+</script>

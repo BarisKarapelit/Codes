@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+</head>
+<input type="text" id="harf">
+<button onClick="islem()">Bak</button>
+<p id="text"></p>
+
+<body>
+</body>
+
+</html>
+<script>
+    var sehirler = ['izmir', 'istanbul', 'ankara', 'trabzon', 'urfa', 'diyarbakır', 'aydın', 'ardahan'
+        , 'niğde', , 'muğla'];
+
+    var rand = Math.floor(Math.random() * 10);
+    var sec = sehirler[rand];
+    console.log(sec);
+    var uzunluk = sec.length;
+    var tire = "-";
+    document.getElementById("text").innerHTML = tire.repeat(uzunluk);
+
+    function islem() {
+
+        var tahminharf = document.getElementById("harf").value;;
+        var belirtec = document.getElementById("text").innerHTML;
+
+        if (sec.includes(tahminharf)) {
+            var yer = sec.indexOf(tahminharf);
+
+            document.getElementById("text").innerHTML = belirtec.substr(0, yer) + tahminharf + belirtec.substr(yer + 1);
+
+            sec = sec.substr(0, yer) + "" + sec.substr(yer + 1);
+            console.log(sec)
+
+            sec = sec.substr(0, yer) + "" + sec.substr(yer + 1)
+            console.log(sec)
+
+
+
+
+        }
+
+    }
+
+</script>

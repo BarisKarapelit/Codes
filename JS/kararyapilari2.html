@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" id="name">
+    </div>
+    <div>
+        <input type="password" id="pwd"> </div>
+    <div> <button onClick="Login()">Enter</button> </div>
+	
+</body>
+
+</html>
+<script>
+    function Login() {
+        var name = document.getElementById("name").value;
+        var pwd = document.getElementById("pwd").value;
+
+        if (name == 'cagatay' && pwd == '123') {
+            alert("Accept");
+            window.location = "http://www.google.com.tr"
+        }
+        else {
+            alert("Error");
+        }
+    }
+
+
+</script>

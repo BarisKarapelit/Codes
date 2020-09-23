@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<input type="text" id="girdi">
+    <button onClick="islem()">İslem</button>
+<body>
+</body>
+</html>
+<script>
+function islem()
+{
+  var liste = []
+    function Ekle() {
+        var kelime = document.getElementById("girdi").value;
+        if(kelime.includes("ç")  kelime.includes("ğ")kelime.includes("ö")||kelime.includes("ü")) {
+            alert("TR KARAKTER YASAK KOCUM!")}
+        else{
+            liste.push(kelime)
+        }
+        console.log(liste)
+    }  
+}
+    
+    
+</script>

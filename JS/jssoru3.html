@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<input  on onMouseOut="inp1()" type="text" id="b1">
+    
+<body>
+</body>
+</html>
+<script>
+function inp1()
+    {
+        var x=document.getElementById("b1").value;
+        if(x<100)
+            {
+                x=Number(x)+5;
+                alert("Tutar :" +x);
+            }else{
+                alert("Tutat :" +x);
+            }
+    }
+</script>

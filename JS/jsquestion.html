@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">1 :</label>
+    <input type="text" name="" id="x">
+    
+
+    </div>
+    <div>
+        <label for="">2 :</label>
+    <input type="text" name="" id="y">
+
+    </div>
+    <button onclick="islem()">İşlem</button>
+
+</body>
+</html>
+<script>
+function islem()
+{
+    var x=document.getElementById("x").value;
+    var y= "TR-"+x;
+    document.getElementById("y").value=y;
+}
+
+</script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            
+
+        }
+        .bgdiv{
+            display: flex;
+
+            width: 100%;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bgdiv">
+        <div style="background-color: cornflowerblue;position: relative;" id="div1"></div>
+        <div style="background-color:aqua;" id="div2"></div>
+        <div style="background-color: chartreuse;" id="div3"></div>
+    </div>
+    <button onclick="islem()">İşlem</button>
+   
+    
+</body>
+</html>
+<script>
+    var x=10;
+    var y=0;
+    function islem()
+    {
+        alert(x);
+    
+        document.getElementById("div1").style.left=x+"px";
+        x=x+x;
+       
+            
+
+        
+    }
+</script>

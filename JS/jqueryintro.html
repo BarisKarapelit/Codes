@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p class="context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maxime possimus hic obcaecati voluptates id explicabo voluptatum nostrum deleniti, placeat asperiores exercitationem laboriosam cumque incidunt, animi ipsum dolores accusamus beatae.</p>
+    <p class="context">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias iste iusto voluptatum earum in vel deleniti distinctio veritatis, quo voluptatem aliquid architecto dolor exercitationem cupiditate, qui nulla? Numquam, ad. Nostrum.</p>
+    <p class="context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel, velit provident tempore veritatis sunt optio reprehenderit dolore illum ea ipsa modi temporibus dolores nostrum animi nisi quidem debitis itaque.</p>
+    <button onclick="Renkdegis()">Button</button>
+</body>
+</html>
+<script>
+    var deger="true";
+    function Renkdegis()
+    {
+        if(deger=="true")
+        {
+            $(".context").css('color','red');
+            deger ="false";
+        }else if(deger=="false"){
+            $(".context").css('color','black');
+            deger="true";
+
+        }
+        
+    
+    }
+</script>

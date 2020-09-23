@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="city" >
+    <button onClick="AddCity" >Add</button>
+    
+</body>
+</html>
+<script>
+    function AddCity()
+    {
+        var x=document.getElementById("city").value;
+        sehirler.push(x);
+    }
+    var sehir = "Belin";
+    var sehir1= "Paris";
+    var sehir2="Ardahan";
+    
+    var sehirler =['İzmir','İstanbul','Trabzon','Diayarbakır','Urfa','Ardahan'];
+    
+    var sayilar=[-2,44,56,78,4.5,8.5];
+    
+    
+    //dizi fonksiyonları, özellikleri
+    
+    // 1) sehirler dizisi kaç elemanlı
+    console.log(sehir.length);
+    
+    //2) dizisinin 4. elemanını yazdır
+    console.log(sehirler[2]);
+    
+    // sayılar dizisini sırala
+    console.log(sayilar.sort(function(a,b){return a-b}))
+    
+    //4)şehirler dizsini ters çevir 
+    
+    console.log(sehirler.reverse());
+    
+    //5)Belirli bir kuralda elemanları yakla
+    console.log(sehirler.slice(2,4));
+    
+    //6) Elemanın olup olmadığını kontol eder
+    console.log(sehirler.includes('İzmir'));
+    
+    //7) Elemanın nerede olduğunu söyler
+    
+    console.log(sehirler.indexOf('İzmir'));
+
+
+</script>

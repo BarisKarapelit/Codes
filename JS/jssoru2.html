@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<input type="text" id="int1">
+    <input type="text" id="int2">
+    <button onClick="b1()">İşlem</button>
+<body>
+</body>
+</html>
+<script>
+function b1(){
+    var x =document.getElementById("int1").value;
+    var y=document.getElementById("int2").value;
+    x=Number(x)+Number(y);
+    x=x/2;
+    if(x>=50)
+        {
+            alert("Geçti");
+            
+        }else if(x<50)
+            {
+                alert("Kaldı");
+            }
+
+}
+
+</script>

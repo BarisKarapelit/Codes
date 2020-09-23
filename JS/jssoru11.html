@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+    <input type="text" id="in1">
+    <button onClick="islem()">İslem</button>
+</body>
+</html>
+<script>
+    var yazi=[];
+function islem()
+    {
+        var x=document.getElementById("in1").value;
+        yazi.push(x);
+        console.log(x);
+        if(yazi.length>10)
+            {
+              var y=yazi.slice(0,10); 
+                yazi.innerHTML=y;
+                console.log("y : "+y);
+            }
+    }
+
+</script>
