@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <label for="">Company Name:</label>
+    <input type="text" id="companyName">
+    <label for="">Contact Name</label>
+    <input type="text" id="contactName">
+    <label for="">Address</label>
+    <label for="">Street:</label>
+    <input type="text" id="street">
+    <label for="">City</label>
+    <input type="text" id="city">
+    <button>Send</button>
+    
+</body>
+</html>
+<script>
+    $('button').click(function()
+    {
+        var data = new Object();
+        var address2 =new  Object();
+        data.companyName=$('companyName').val();
+        data.contactName=$('contactName').val();
+        address2.street=$('street').val();
+        address2.city=$('city').val();
+        
+   
+        data.address=address2;
+
+
+
+        $.ajax({
+        url:"https://northwind.now.sh/api/suppliers",
+        type:"POST",
+        data:data,
+        success:function(){
+            alert("Data Eklendi!");
+        }
+    })
+    })
+</script>

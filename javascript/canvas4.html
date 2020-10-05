@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <canvas id="gamebox" style="border:1px solid black;" width="500" height="300"></canvas>
+
+</body>
+
+</html>
+
+<script>
+
+    setInterval(() => {
+
+        var game = document.getElementById("gamebox");
+        var gcontext = game.getContext('2d');
+        gcontext.clearRect(sayac + 10, 0, boxw, boxt);
+
+        var randomtop = Math.floor((Math.random() * 200) + 1);
+        var randomleft = Math.floor((Math.random() * 500) + 1);
+
+        gcontext.fillStyle = 'tomato';
+        gcontext.fillRect(randomleft, randomtop, 50, 50);
+
+        if (randomleft >225 && randomleft < 275 )
+         {
+             if( randomtop > 125 && randomtop < 175){
+                alert("yandın") 
+             }
+           
+        }
+
+
+    }, 1000);
+</script>
